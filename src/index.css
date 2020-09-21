@@ -19,6 +19,21 @@ body {
     padding: .5rem;
     background: hsl(255, 6%, 25%);
 }
+.editor-container.collapsed{
+    flex-grow: 0;
+}
+.editor-container.collapsed .CodeMirror-scroll{
+    position:absolute;
+    overflow:hidden!important;
+}
+
+.expand-collapse-button{
+    margin-left: .3rem;
+    background:none;
+    border:none;
+    color:white;
+    cursor: pointer;
+}
 
 .editor-title {
     display: flex;
